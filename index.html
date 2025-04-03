@@ -30,6 +30,7 @@
       height: 80vh;
       max-height: 800px;
       margin: 20px;
+      aspect-ratio: 3/4;
     }
 
     .flip-container {
@@ -37,6 +38,7 @@
       width: 100%;
       height: 100%;
       position: relative;
+      aspect-ratio: 3/4;
     }
 
     .card {
@@ -48,6 +50,7 @@
       cursor: pointer;
       top: 0;
       left: 0;
+      aspect-ratio: 3/4;
     }
 
     .front, .back {
@@ -68,12 +71,14 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
       text-align: center;
       overflow: hidden;
+      aspect-ratio: 3/4;
     }
 
     .front {
       background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('front-image.jpg');
       background-size: cover;
-      background-position: 59% center;
+      background-position: center;
+      background-repeat: no-repeat;
       border: 2px solid #d4af37;
       position: relative;
       z-index: 1;
@@ -82,7 +87,8 @@
     .back {
       background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('back-image.jpg');
       background-size: cover;
-      background-position: 41% center;
+      background-position: center;
+      background-repeat: no-repeat;
       transform: rotateY(180deg);
       border: 2px solid #d4af37;
       position: absolute;
@@ -134,8 +140,10 @@
     .ornament {
       font-size: 2em;
       color: #d4af37;
-      margin: 20px 0;
+      margin: 20px auto;
       animation: float 3s ease-in-out infinite;
+      text-align: center;
+      width: 100%;
     }
 
     .flipped {
@@ -547,10 +555,25 @@
         margin: 10px;
         height: 85vh;
         max-height: 700px;
+        aspect-ratio: 3/4;
+      }
+
+      .flip-container {
+        aspect-ratio: 3/4;
+      }
+
+      .card {
+        aspect-ratio: 3/4;
+      }
+
+      .front, .back {
+        aspect-ratio: 3/4;
+        padding: 30px;
       }
 
       .front h1 {
         font-size: 2.5em;
+        margin-top: 20px;
       }
 
       .front p {
@@ -629,6 +652,7 @@
 
       .invitation {
         padding: 15px;
+        overflow-y: auto;
       }
 
       .invitation .content-overlay {
@@ -642,10 +666,25 @@
         margin: 5px;
         height: 80vh;
         max-height: 600px;
+        aspect-ratio: 3/4;
+      }
+
+      .flip-container {
+        aspect-ratio: 3/4;
+      }
+
+      .card {
+        aspect-ratio: 3/4;
+      }
+
+      .front, .back {
+        aspect-ratio: 3/4;
+        padding: 20px;
       }
 
       .front h1 {
         font-size: 2em;
+        margin-top: 15px;
       }
 
       .front p {
@@ -720,6 +759,7 @@
 
       .invitation {
         padding: 10px;
+        overflow-y: auto;
       }
 
       .invitation .content-overlay {
