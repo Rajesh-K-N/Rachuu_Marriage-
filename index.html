@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rachana & Shaurya Wedding Invitation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&family=Wix+Madefor+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -246,7 +246,7 @@
     }
 
     .venue {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Wix Madefor Display', sans-serif;
       font-size: 1.3em;
       color: #333;
       margin: 10px 0;
@@ -267,7 +267,7 @@
     }
 
     .date-venue {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Wix Madefor Display', sans-serif;
       font-size: 1.5em;
       color: #b8860b;
       margin: 25px 0;
@@ -775,26 +775,26 @@
       <div class="card" id="card">
         <div class="front">
           <div class="content-overlay">
-            <div class="ornament">❦</div>
+            <div class="ornament">❤</div>
             <h1>Save the Date</h1>
             <p>For the Wedding Celebration of</p>
             <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5em; color: #d4af37; margin: 20px 0;">
               Rachana & Shaurya
             </h2>
-            <div class="ornament">❧</div>
+            <div class="ornament">❤</div>
           </div>
           <div class="message">Click to open</div>
         </div>
         <div class="back">
           <div class="content-overlay">
             <div class="back-content">
-              <div class="ornament">✦</div>
+              <div class="ornament">❤</div>
               <p>
                 With great joy<br>
                 we invite you to share in our<br>
                 special day
               </p>
-              <div class="ornament">✦</div>
+              <div class="ornament">❤</div>
             </div>
           </div>
           <div class="seal" id="seal">Tachii<br>Muthh</div>
@@ -803,10 +803,10 @@
     </div>
     <div class="invitation" id="invitation">
       <div class="content-overlay">
-        <div class="ornament">❦</div>
+        <div class="ornament">❤</div>
         <h2>Rachana & Shaurya</h2>
-        <p>Request the honor of your presence</p>
-        <p>as they exchange vows and begin their new life together</p>
+        <p style="font-family: 'Wix Madefor Display', sans-serif;">Request the honor of your presence</p>
+        <p style="font-family: 'Wix Madefor Display', sans-serif;">as they exchange vows and begin our new life together</p>
         <div class="date-venue">
           May 21 & 22, 2025<br>
           Dampathi Muhurtham at 10:30 AM<br>
@@ -815,10 +815,10 @@
             Ammathi, Kodagu
           </div>
         </div>
-        <div class="ornament">❧</div>
+        <div class="ornament">❤</div>
       </div>
       <div class="qr-text">Scan for location</div>
-      <div class="qr-code"></div>
+      <div class="qr-code" id="qrCode"></div>
     </div>
   </div>
   
@@ -1027,6 +1027,13 @@
           }
         }
       });
+
+      const qrCode = document.getElementById('qrCode');
+      if (qrCode) {
+        qrCode.addEventListener('click', function() {
+          window.open('https://goo.gl/maps/6nVtxaLdrGwYtnYq5?g_st=aw', '_blank');
+        });
+      }
     });
   </script>
 </body>
